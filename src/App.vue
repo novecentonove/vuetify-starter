@@ -30,7 +30,7 @@
 
         <p class="menu_section">HOME</p>
 
-        <v-list-item v-for="item in menuItems" :value="item.value" variant="plain" rounded="xl" :ripple="false" color="black">
+        <v-list-item v-for="item in menuItems" :value="item.value" variant="plain" rounded="xl" :ripple="false" color="black" :key="item">
           
           <v-icon size="small" class="ml-1 mr-4" :style="item.style ?? ''">{{ item.icon }}</v-icon>
           <span title="Home">{{item.name}}</span>
@@ -49,7 +49,7 @@
 
 <script setup>
     import { ref } from 'vue';
-    import { RouterLink, RouterView } from 'vue-router'
+    import { RouterView } from 'vue-router'
     const toggleDrawer = ref(true)
     const rail = ref(false)
 

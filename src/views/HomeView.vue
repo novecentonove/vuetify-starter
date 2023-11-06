@@ -34,8 +34,6 @@
       </v-col>
     </v-row>
 
-    
-
     <v-table density="compact" class="mt-10">
     <thead>
       <tr>
